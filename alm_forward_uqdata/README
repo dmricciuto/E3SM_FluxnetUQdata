@@ -1,0 +1,13 @@
+Files to aid parametric, forward UQ workflow for ALM.
+
+
+Parameters_TitanUQ_ACME.csv : parameter file with names, ranges, and default values
+FLUXNETUQ_1-1000.nc         : ALM output (1000 runs)
+FLUXNETUQ_8001-10000.nc     : ALM output (2000 runs)
+input_clm.dat               :  Nxp matrix for CLM inputs (N=3000 samples, p=68 parameters)
+input_x.dat                 :  Nx(p-2) matrix for surrogate input (N samples, p-2 parameters,
+		   					 since two are completely determined by others)
+pnames_clm.dat 				:  Names of p parameters
+pnames_x.dat   				:  Same list except the two removed parameters
+pdomain_x.dat  				:  Ranges of the p-2 parameters over which surrogate will be built
+allcolors.dat               : Colorcode of parameters for consistency across visaulization
